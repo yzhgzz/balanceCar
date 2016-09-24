@@ -1,0 +1,33 @@
+SET PATH=C:\Keil\ARM\ARMCC\bin\;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\QuickTime\QTSystem\
+SET CPU_TYPE=STM32F103C8
+SET CPU_VENDOR=STMicroelectronics
+SET UV2_TARGET=BasicBalance
+SET CPU_CLOCK=0x007A1200
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\misc.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\stm32f10x_dma.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\stm32f10x_exti.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\stm32f10x_gpio.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\stm32f10x_i2c.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\stm32f10x_rcc.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\stm32f10x_tim.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\stm32f10x_usart.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\core_cm3.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\system_stm32f10x.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\main.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\stm32f10x_it.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\led.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\usart.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\i2c_mpu6050.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\pwm.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\motor.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\systick.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\upstandingcar.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\outputdata.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\mpu6050.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\i2c.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\delay.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmAsm" --Via ".\output\startup_stm32f10x_md._ia"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\inv_mpu.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmCC" --Via ".\output\inv_mpu_dmp_motion_driver.__i"
+"C:\Keil\ARM\ARMCC\bin\ArmLink" --Via ".\Output\BasicBalance.lnp"
+C:\Keil\ARM\ARMCC\bin\fromelf.exe ".\Output\BasicBalance.axf" --i32combined --output ".\Output\BasicBalance.hex"
